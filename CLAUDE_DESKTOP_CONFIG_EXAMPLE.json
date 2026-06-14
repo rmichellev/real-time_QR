@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "qr-project-estimator": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/mcp-qr-estimator/dist/server.js"]
+    }
+  }
+}

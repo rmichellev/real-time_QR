@@ -1,0 +1,25 @@
+{
+  "name": "mcp-qr-project-estimator",
+  "version": "1.0.0",
+  "description": "MCP server para Claude Desktop: estima proyectos y genera QR en tiempo real.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "endpoint": "node dist/endpoint.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.3",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MCP: npm install",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "MCP: build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": "build",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "MCP: start Claude server",
+      "type": "shell",
+      "command": "npm run start",
+      "dependsOn": "MCP: build",
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "MCP: start QR endpoint",
+      "type": "shell",
+      "command": "npm run endpoint",
+      "dependsOn": "MCP: build",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
